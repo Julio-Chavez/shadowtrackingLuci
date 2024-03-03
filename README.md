@@ -1,6 +1,30 @@
 # shadowtracking
 
-Shadow tracking code for WASIRF plastic particle experiments  
+Shadow tracking code for WASIRF plastic particle experiments 
+
+### File structure
+```
+detect_MP.m
+├── generateCircleGridPoints.m
+├── cam_imread.m
+├── calibrate_camera.m
+├── pcolor_img.m
+├── get_particle_tracks.m
+└── preprocess_MP.m
+    ├── remove_track.m
+    ├── fix_tracks.m
+    │   └── gauss_position.m
+    │       └── gauss_kernel.m
+    ├── filter_ghost_tracks.m
+    │   └── remove_track.m
+    └── smooth_tracks.m
+        ├── gauss_position.m
+        │   └── gauss_kernel.m
+        ├── gauss_velocity.m
+        │   └── gauss_kernel.m
+        └── gauss_accel.m
+            └── gauss_kernel.m
+```
 
 
 ## References
